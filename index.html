@@ -32,6 +32,24 @@
     --max: 1200px;
   }
 
+  /* ===== TOP BANNER ===== */
+  .top-banner {
+    background: var(--accent-dark);
+    color: var(--white);
+    text-align: center;
+    padding: 10px 24px;
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 1.4;
+  }
+  .top-banner strong { font-weight: 600; }
+  .top-banner-icon {
+    margin-right: 8px;
+    font-style: normal;
+    opacity: 0.85;
+  }
+
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
   body {
@@ -910,6 +928,12 @@
 </style>
 </head>
 <body>
+
+<!-- BANNER TOPO -->
+<div class="top-banner">
+  <span class="top-banner-icon">⚠</span>
+  Atendimento exclusivamente <strong>particular</strong> — Não realizo tratamento gratuito.
+</div>
 
 <!-- NAV -->
 <nav class="nav">
