@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dra. Tania Tamashiro — Ortodontista em São Paulo | Invisalign</title>
+<meta name="description" content="Especialista em Ortodontia e Ortopedia Funcional com +23 anos de experiência. +3000 pacientes atendidos e +400 casos Invisalign finalizados em São Paulo." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf7f2;
+    --bg-alt: #f2ede4;
+    --ink: #0f2a2e;
+    --ink-soft: #3a5155;
+    --muted: #6b7b7e;
+    --line: #e3dbce;
+    --primary: #0f5c5e;
+    --primary-dark: #0a3f40;
+    --accent: #c89b6b;
+    --accent-dark: #a67a47;
+    --white: #ffffff;
+    --whatsapp: #25d366;
+    --radius: 14px;
+    --radius-lg: 22px;
+    --shadow-sm: 0 1px 2px rgba(15,42,46,.06), 0 4px 12px rgba(15,42,46,.04);
+    --shadow-md: 0 8px 30px rgba(15,42,46,.08);
+    --shadow-lg: 0 20px 60px rgba(15,42,46,.12);
+    --font-serif: 'Fraunces', Georgia, serif;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --max: 1200px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--font-sans);
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+  button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    color: var(--ink);
+  }
+  h1 { font-size: clamp(2.4rem, 5.5vw, 4.2rem); font-weight: 400; }
+  h2 { font-size: clamp(1.9rem, 3.8vw, 3rem); font-weight: 400; }
+  h3 { font-size: clamp(1.3rem, 2vw, 1.6rem); }
+  p { color: var(--ink-soft); }
+
+  .container { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 20px;
+  }
+  .eyebrow::before {
+    content: '';
+    width: 28px;
+    height: 1px;
+    background: var(--primary);
+  }
+
+  /* ===== NAV ===== */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(250, 247, 242, 0.88);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .brand {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+  }
+  .brand-name {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .brand-sub {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+  .nav-links {
+    display: flex;
+    gap: 36px;
+    list-style: none;
+  }
+  .nav-links a {
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--ink-soft);
+    transition: color .2s;
+  }
+  .nav-links a:hover { color: var(--primary); }
+  .nav-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 20px;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: background .2s;
+  }
+  .nav-cta:hover { background: var(--primary-dark); }
+  .menu-btn { display: none; font-size: 1.5rem; color: var(--ink); }
+
+  @media (max-width: 900px) {
+    .nav-links { display: none; }
+    .nav-cta span { display: none; }
+    .nav-cta { padding: 11px 14px; }
+  }
+
+  /* ===== BUTTONS ===== */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 32px;
+    border-radius: 999px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all .25s ease;
+    cursor: pointer;
+  }
+  .btn-primary {
+    background: var(--primary);
+    color: var(--white);
+    box-shadow: var(--shadow-md);
+  }
+  .btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+  }
+  .btn-ghost {
+    border: 1px solid var(--line);
+    color: var(--ink);
+    background: transparent;
+  }
+  .btn-ghost:hover { border-color: var(--primary); color: var(--primary); }
+  .btn-whatsapp {
+    background: var(--whatsapp);
+    color: var(--white);
+  }
+  .btn-whatsapp:hover { background: #1fb757; transform: translateY(-2px); }
+
+  /* ===== HERO ===== */
+  .hero {
+    padding: 80px 0 100px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(200,155,107,0.12), transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 70px;
+    align-items: center;
+    position: relative;
+  }
+  .hero h1 {
+    margin-bottom: 24px;
+  }
+  .hero h1 em {
+    font-style: italic;
+    font-weight: 300;
+    color: var(--primary);
+  }
+  .hero-lead {
+    font-size: 1.15rem;
+    color: var(--ink-soft);
+    margin-bottom: 36px;
+    max-width: 520px;
+  }
+  .hero-actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+  }
+  .hero-trust {
+    display: flex;
+    gap: 40px;
+    padding-top: 32px;
+    border-top: 1px solid var(--line);
+    flex-wrap: wrap;
+  }
+  .trust-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .trust-num {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--primary);
+    line-height: 1;
+  }
+  .trust-label {
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin-top: 6px;
+    max-width: 140px;
+  }
+  .hero-media {
+    position: relative;
+  }
+  .hero-img {
+    border-radius: var(--radius-lg);
+    aspect-ratio: 4/5;
+    background: linear-gradient(135deg, var(--bg-alt), var(--line));
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+    position: relative;
+  }
+  .hero-img img { width: 100%; height: 100%; object-fit: cover; }
+  .hero-img-placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted);
+    font-size: 0.85rem;
+    text-align: center;
+    padding: 24px;
+  }
+  .hero-badge {
+    position: absolute;
+    bottom: -24px;
+    left: -24px;
+    background: var(--white);
+    padding: 18px 24px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .badge-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: var(--bg-alt);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+  }
+  .badge-text strong {
+    display: block;
+    font-size: 0.95rem;
+    color: var(--ink);
+  }
+  .badge-text span {
+    font-size: 0.78rem;
+    color: var(--muted);
+  }
+
+  @media (max-width: 900px) {
+    .hero { padding: 50px 0 70px; }
+    .hero-grid { grid-template-columns: 1fr; gap: 50px; }
+    .hero-trust { gap: 28px; }
+    .hero-badge { left: 16px; bottom: -20px; }
+  }
+
+  /* ===== SECTION BASE ===== */
+  section { padding: 110px 0; }
+  .section-head {
+    max-width: 720px;
+    margin-bottom: 70px;
+  }
+  .section-head.center { margin-left: auto; margin-right: auto; text-align: center; }
+  .section-head p {
+    font-size: 1.1rem;
+    margin-top: 20px;
+  }
+  @media (max-width: 900px) {
+    section { padding: 80px 0; }
+    .section-head { margin-bottom: 50px; }
+  }
+
+  /* ===== PROBLEMS ===== */
+  .problems { background: var(--bg-alt); }
+  .problems-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .problem-card {
+    background: var(--white);
+    padding: 36px 28px;
+    border-radius: var(--radius);
+    border: 1px solid transparent;
+    transition: all .3s ease;
+  }
+  .problem-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+  }
+  .problem-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: var(--bg-alt);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 22px;
+  }
+  .problem-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  .problem-card p {
+    font-size: 0.92rem;
+  }
+  @media (max-width: 900px) {
+    .problems-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 560px) {
+    .problems-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ===== INVISALIGN FEATURE ===== */
+  .invisalign {
+    background: var(--ink);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+  }
+  .invisalign::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -300px;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(200,155,107,0.15), transparent 60%);
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+  .invisalign h2, .invisalign .eyebrow { color: var(--white); }
+  .invisalign .eyebrow { color: var(--accent); }
+  .invisalign .eyebrow::before { background: var(--accent); }
+  .invisalign p { color: rgba(255,255,255,0.75); }
+  .invisalign-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    position: relative;
+  }
+  .invisalign-features {
+    list-style: none;
+    margin: 36px 0;
+    display: grid;
+    gap: 18px;
+  }
+  .invisalign-features li {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    color: rgba(255,255,255,0.92);
+    font-size: 1rem;
+  }
+  .invisalign-features .check {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--ink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-top: 2px;
+  }
+  .invisalign-img {
+    aspect-ratio: 1;
+    border-radius: var(--radius-lg);
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    overflow: hidden;
+    position: relative;
+  }
+  .invisalign-img img { width: 100%; height: 100%; object-fit: cover; }
+  @media (max-width: 900px) {
+    .invisalign-grid { grid-template-columns: 1fr; gap: 50px; }
+  }
+
+  /* ===== TREATMENTS ===== */
+  .treatments-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+  .treatment {
+    background: var(--white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--line);
+    transition: all .3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  .treatment:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary);
+  }
+  .treatment-img {
+    aspect-ratio: 4/3;
+    background: var(--bg-alt);
+    overflow: hidden;
+    position: relative;
+  }
+  .treatment-img img { width: 100%; height: 100%; object-fit: cover; }
+  .treatment-body {
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .treatment h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+  .treatment p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    flex: 1;
+  }
+  .treatment a {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--primary);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .treatment a::after { content: '→'; transition: transform .2s; }
+  .treatment a:hover::after { transform: translateX(4px); }
+  @media (max-width: 1024px) {
+    .treatments-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 560px) {
+    .treatments-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ===== SNORING ===== */
+  .snoring {
+    background: var(--bg-alt);
+  }
+  .snoring-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 70px;
+    align-items: center;
+  }
+  .snoring-img {
+    aspect-ratio: 1;
+    border-radius: var(--radius-lg);
+    background: var(--white);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+  }
+  .snoring-img img { width: 100%; height: 100%; object-fit: cover; }
+  .snoring h2 em { font-style: italic; color: var(--primary); }
+  .snoring-list {
+    list-style: none;
+    margin-top: 28px;
+    display: grid;
+    gap: 14px;
+  }
+  .snoring-list li {
+    padding-left: 28px;
+    position: relative;
+    color: var(--ink-soft);
+  }
+  .snoring-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: 700;
+  }
+  .snoring .btn { margin-top: 36px; }
+  @media (max-width: 900px) {
+    .snoring-wrap { grid-template-columns: 1fr; gap: 40px; }
+  }
+
+  /* ===== PROCESS ===== */
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+  .step {
+    padding: 36px 32px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--white);
+    position: relative;
+    transition: all .3s;
+  }
+  .step:hover {
+    border-color: var(--primary);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+  }
+  .step-num {
+    font-family: var(--font-serif);
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 18px;
+  }
+  .step h3 {
+    font-size: 1.15rem;
+    margin-bottom: 10px;
+  }
+  .step p { font-size: 0.92rem; }
+  @media (max-width: 900px) { .process-grid { grid-template-columns: 1fr; } }
+
+  /* ===== TESTIMONIAL ===== */
+  .testimonial {
+    background: var(--primary);
+    color: var(--white);
+  }
+  .testimonial-inner {
+    max-width: 820px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .testimonial .quote-mark {
+    font-family: var(--font-serif);
+    font-size: 5rem;
+    line-height: 0.5;
+    color: var(--accent);
+    margin-bottom: 30px;
+  }
+  .testimonial blockquote {
+    font-family: var(--font-serif);
+    font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+    font-weight: 300;
+    line-height: 1.4;
+    font-style: italic;
+    color: var(--white);
+    margin-bottom: 30px;
+  }
+  .testimonial cite {
+    font-style: normal;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.85);
+  }
+  .testimonial cite span {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    text-transform: none;
+    color: rgba(255,255,255,0.6);
+    margin-top: 6px;
+  }
+
+  /* ===== FAQ ===== */
+  .faq-wrap {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+  .faq-item {
+    border-bottom: 1px solid var(--line);
+  }
+  .faq-q {
+    width: 100%;
+    padding: 26px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .faq-q .icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: var(--primary);
+    transition: all .3s;
+    flex-shrink: 0;
+  }
+  .faq-item.open .faq-q .icon {
+    background: var(--primary);
+    color: var(--white);
+    transform: rotate(45deg);
+  }
+  .faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s ease;
+  }
+  .faq-item.open .faq-a { max-height: 400px; }
+  .faq-a p {
+    padding: 0 0 26px 0;
+    font-size: 0.98rem;
+    color: var(--ink-soft);
+  }
+
+  /* ===== LOCATIONS ===== */
+  .locations { background: var(--bg-alt); }
+  .locations-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  .location {
+    background: var(--white);
+    padding: 40px;
+    border-radius: var(--radius);
+    border: 1px solid var(--line);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .location .tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--primary);
+    font-weight: 600;
+  }
+  .location .tag::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--primary);
+  }
+  .location h3 { font-size: 1.8rem; margin-bottom: 4px; }
+  .location address {
+    font-style: normal;
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+  .location-meta {
+    display: flex;
+    gap: 24px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  .location-meta strong { color: var(--ink); font-weight: 500; display: block; }
+  .location .btn { align-self: flex-start; margin-top: 10px; }
+  @media (max-width: 900px) {
+    .locations-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ===== FINAL CTA ===== */
+  .final-cta {
+    background: var(--ink);
+    color: var(--white);
+    text-align: center;
+    padding: 130px 24px;
+    position: relative;
+    overflow: hidden;
+  }
+  .final-cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center, rgba(200,155,107,0.1), transparent 70%);
+  }
+  .final-cta-inner { position: relative; max-width: 720px; margin: 0 auto; }
+  .final-cta h2 { color: var(--white); margin-bottom: 20px; }
+  .final-cta h2 em { color: var(--accent); font-style: italic; }
+  .final-cta p {
+    color: rgba(255,255,255,0.75);
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+  }
+
+  /* ===== FOOTER ===== */
+  footer {
+    background: #0a1f21;
+    color: rgba(255,255,255,0.7);
+    padding: 70px 0 30px;
+    font-size: 0.9rem;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+  footer h4 {
+    color: var(--white);
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    font-weight: 600;
+  }
+  .footer-brand-name {
+    font-family: var(--font-serif);
+    font-size: 1.4rem;
+    color: var(--white);
+    margin-bottom: 8px;
+  }
+  footer ul { list-style: none; display: grid; gap: 10px; }
+  footer a:hover { color: var(--accent); }
+  .footer-bottom {
+    padding-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.5);
+  }
+  @media (max-width: 900px) {
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+  }
+
+  /* ===== FLOAT WHATSAPP ===== */
+  .wa-wrap {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    z-index: 100;
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    flex-direction: row-reverse;
+  }
+  .wa-float {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--whatsapp);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    box-shadow: 0 8px 24px rgba(37,211,102,0.4);
+    transition: transform .2s;
+    position: relative;
+  }
+  .wa-float:hover { transform: scale(1.08); }
+  .wa-float::after {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    border: 2px solid var(--whatsapp);
+    opacity: 0.6;
+    animation: pulse 2s ease-out infinite;
+  }
+  @keyframes pulse {
+    0% { transform: scale(1); opacity: 0.6; }
+    100% { transform: scale(1.4); opacity: 0; }
+  }
+  /* Balão de fala */
+  .wa-balloon {
+    background: #fff;
+    border-radius: 18px 18px 4px 18px;
+    padding: 12px 18px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.14);
+    max-width: 220px;
+    font-family: var(--font-sans);
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1.4;
+    position: relative;
+    opacity: 0;
+    transform: scale(0.85) translateX(10px);
+    transform-origin: bottom right;
+    transition: opacity .4s ease, transform .4s ease;
+    pointer-events: none;
+  }
+  .wa-balloon.visible {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+    pointer-events: auto;
+  }
+  .wa-balloon .wa-balloon-close {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    color: #555;
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    line-height: 1;
+  }
+  .wa-balloon-name {
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 4px;
+    font-size: 0.8rem;
+  }
+  .wa-balloon-dots {
+    display: inline-flex;
+    gap: 4px;
+    margin-top: 8px;
+  }
+  .wa-balloon-dots span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #ccc;
+    animation: typing 1.2s ease infinite;
+  }
+  .wa-balloon-dots span:nth-child(2) { animation-delay: 0.2s; }
+  .wa-balloon-dots span:nth-child(3) { animation-delay: 0.4s; }
+  @keyframes typing {
+    0%, 100% { opacity: 0.3; transform: translateY(0); }
+    50% { opacity: 1; transform: translateY(-3px); }
+  }
+  .wa-balloon-msg { display: none; }
+
+  /* ===== ANIMATIONS ===== */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity .8s ease, transform .8s ease;
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="brand">
+      <span class="brand-name">Dra. Tania Tamashiro</span>
+      <span class="brand-sub">Ortodontia · São Paulo</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#tratamentos">Tratamentos</a></li>
+      <li><a href="#invisalign">Invisalign</a></li>
+      <li><a href="#processo">Processo</a></li>
+      <li><a href="#faq">Perguntas</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <a href="https://api.whatsapp.com/send?phone=5511976604000" class="nav-cta" target="_blank">
+      <span>Agendar avaliação</span> →
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text reveal">
+      <div class="eyebrow">Ortodontia de Alta Performance</div>
+      <h1>Seu sorriso<br/>alinhado com <em>precisão</em><br/>e leveza.</h1>
+      <p class="hero-lead">
+        Mais de 23 anos dedicados à ortodontia e ortopedia funcional dos maxilares. Especialista em Invisalign, aparelhos fixos, tratamento de ronco e apneia do sono — em São Paulo.
+      </p>
+      <div class="hero-actions">
+        <a href="https://api.whatsapp.com/send?phone=5511976604000&text=Ol%C3%A1%20Dra.%20Tania,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." class="btn btn-primary" target="_blank">
+          Agendar minha avaliação →
+        </a>
+        <a href="#tratamentos" class="btn btn-ghost">Ver tratamentos</a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-item">
+          <span class="trust-num">+23</span>
+          <span class="trust-label">Anos de experiência clínica</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-num">+3.000</span>
+          <span class="trust-label">Pacientes atendidos</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-num">+400</span>
+          <span class="trust-label">Casos Invisalign finalizados</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-media reveal">
+      <div class="hero-img">
+        <img src="images/hero.jpg" alt="Dra. Tania Tamashiro" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <div class="hero-img-placeholder" style="display:none;">
+          images/hero.jpg<br/>
+          <small>(retrato profissional vertical 4:5)</small>
+        </div>
+      </div>
+      <div class="hero-badge">
+        <div class="badge-icon">◆</div>
+        <div class="badge-text">
+          <strong>Invisalign Doctor</strong>
+          <span>Top Doctor reconhecida</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEMS -->
+<section class="problems" id="problemas">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Problemas que soluciono</div>
+      <h2>Do mais simples ao mais complexo — tratamos tudo.</h2>
+      <p>Cada caso é único. Ao longo de mais de duas décadas, desenvolvi expertise para conduzir tanto alinhamentos diretos quanto casos que exigem planejamento ortodôntico avançado.</p>
+    </div>
+    <div class="problems-grid">
+      <div class="problem-card reveal">
+        <div class="problem-icon">◑</div>
+        <h3>Dentes tortos</h3>
+        <p>Apinhamentos leves a severos com alinhamento previsível.</p>
+      </div>
+      <div class="problem-card reveal">
+        <div class="problem-icon">◐</div>
+        <h3>Diastemas</h3>
+        <p>Espaços entre os dentes fechados com planejamento preciso.</p>
+      </div>
+      <div class="problem-card reveal">
+        <div class="problem-icon">◒</div>
+        <h3>Mordidas abertas</h3>
+        <p>Correção funcional mesmo em casos provocados por chupeta.</p>
+      </div>
+      <div class="problem-card reveal">
+        <div class="problem-icon">◓</div>
+        <h3>Mordidas profundas</h3>
+        <p>Reposicionamento vertical para função e estética restauradas.</p>
+      </div>
+      <div class="problem-card reveal">
+        <div class="problem-icon">✦</div>
+        <h3>Classes II e III</h3>
+        <p>Correção de relação maxilar com abordagens clínicas modernas.</p>
+      </div>
+      <div class="problem-card reveal">
+        <div class="problem-icon">✧</div>
+        <h3>Cirurgia ortognática</h3>
+        <p>Condução ortodôntica em casos cirúrgicos complexos.</p>
+      </div>
+      <div class="problem-card reveal">
+        <div class="problem-icon">❖</div>
+        <h3>Ronco e apneia</h3>
+        <p>Ortopedia funcional que devolve a qualidade do sono.</p>
+      </div>
+      <div class="problem-card reveal">
+        <div class="problem-icon">✺</div>
+        <h3>Mini-implantes</h3>
+        <p>Ancoragem esquelética para movimentos que antes eram impossíveis.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INVISALIGN -->
+<section class="invisalign" id="invisalign">
+  <div class="container invisalign-grid">
+    <div class="reveal">
+      <div class="eyebrow">Invisalign · Top Doctor</div>
+      <h2>Alinhadores invisíveis.<br/>Resultados <em style="color:var(--accent);font-style:italic;">previsíveis</em>.</h2>
+      <p>Com mais de 400 casos finalizados e experiência prévia como planejadora de alinhadores, conduzo tratamentos Invisalign com a precisão e velocidade que o método permite.</p>
+      <ul class="invisalign-features">
+        <li><span class="check">✓</span> Tratamento mais rápido que métodos convencionais</li>
+        <li><span class="check">✓</span> Indolor, confortável e praticamente invisível</li>
+        <li><span class="check">✓</span> Planejamento digital com previsibilidade total</li>
+        <li><span class="check">✓</span> Garantia de até 5 anos sobre o resultado</li>
+      </ul>
+      <a href="https://api.whatsapp.com/send?phone=5511976604000&text=Quero%20saber%20mais%20sobre%20Invisalign" class="btn btn-whatsapp" target="_blank">
+        Falar sobre Invisalign
+      </a>
+    </div>
+    <div class="invisalign-img reveal">
+      <img src="images/invisalign.jpg" alt="Invisalign alinhador transparente" onerror="this.style.display='none';" />
+    </div>
+  </div>
+</section>
+
+<!-- TREATMENTS -->
+<section id="tratamentos">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Tipos de aparelhos</div>
+      <h2>O tratamento certo para cada sorriso.</h2>
+      <p>Apresento as opções, explico o que cabe no seu caso e construímos juntos o plano de tratamento. Sem imposição, sem pressa.</p>
+    </div>
+    <div class="treatments-grid">
+      <article class="treatment reveal">
+        <div class="treatment-img"><img src="images/tratamento-invisalign.jpg" alt="Invisalign" onerror="this.parentElement.style.background='var(--bg-alt)'" /></div>
+        <div class="treatment-body">
+          <h3>Invisalign</h3>
+          <p>Alinhadores transparentes, discretos e removíveis. Tratamento moderno e previsível.</p>
+          <a href="https://api.whatsapp.com/send?phone=5511976604000&text=Quero%20Invisalign" target="_blank">Quero este</a>
+        </div>
+      </article>
+      <article class="treatment reveal">
+        <div class="treatment-img"><img src="images/aparelho-estetico.jpg" alt="Aparelho fixo estético" onerror="this.parentElement.style.background='var(--bg-alt)'" /></div>
+        <div class="treatment-body">
+          <h3>Fixo estético</h3>
+          <p>Bráquetes transparentes ou cerâmicos para quem quer discrição sem abrir mão do fixo.</p>
+          <a href="https://api.whatsapp.com/send?phone=5511976604000&text=Quero%20aparelho%20est%C3%A9tico" target="_blank">Quero este</a>
+        </div>
+      </article>
+      <article class="treatment reveal">
+        <div class="treatment-img"><img src="images/aparelho-metalico.jpg" alt="Aparelho fixo metálico" onerror="this.parentElement.style.background='var(--bg-alt)'" /></div>
+        <div class="treatment-body">
+          <h3>Fixo metálico</h3>
+          <p>O clássico que resolve os casos mais complexos com resultado espetacular.</p>
+          <a href="https://api.whatsapp.com/send?phone=5511976604000&text=Quero%20aparelho%20met%C3%A1lico" target="_blank">Quero este</a>
+        </div>
+      </article>
+      <article class="treatment reveal">
+        <div class="treatment-img"><img src="images/aparelho-movel.jpg" alt="Aparelho móvel infantil" onerror="this.parentElement.style.background='var(--bg-alt)'" /></div>
+        <div class="treatment-body">
+          <h3>Móvel infantil</h3>
+          <p>Tratamento ortopédico para crianças a partir dos 5 anos — prevenção e correção precoce.</p>
+          <a href="https://api.whatsapp.com/send?phone=5511976604000&text=Quero%20aparelho%20infantil" target="_blank">Quero este</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SNORING -->
+<section class="snoring">
+  <div class="container snoring-wrap">
+    <div class="snoring-img reveal">
+      <img src="images/ronco-apneia.jpg" alt="Tratamento de ronco e apneia" onerror="this.parentElement.style.background='var(--bg-alt)'" />
+    </div>
+    <div class="reveal">
+      <div class="eyebrow">Ronco & Apneia do Sono</div>
+      <h2>Durma melhor.<br/>Viva <em>melhor</em>.</h2>
+      <p>O ronco não é apenas incômodo — é um sinal. A ortopedia funcional dos maxilares oferece soluções reais, não invasivas, para devolver noites de sono tranquilas a você e a quem dorme ao seu lado.</p>
+      <ul class="snoring-list">
+        <li>Avaliação completa do padrão respiratório</li>
+        <li>Aparelhos intraorais sob medida</li>
+        <li>Acompanhamento integrado com outros especialistas</li>
+        <li>Melhora mensurável na qualidade do sono</li>
+      </ul>
+      <a href="https://api.whatsapp.com/send?phone=5511976604000&text=Quero%20tratar%20ronco%20e%20apneia" class="btn btn-primary" target="_blank">Quero dormir melhor →</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="processo">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Como funciona</div>
+      <h2>Três passos até o seu novo sorriso.</h2>
+    </div>
+    <div class="process-grid">
+      <div class="step reveal">
+        <div class="step-num">01</div>
+        <h3>Avaliação inicial</h3>
+        <p>Conversa, exame clínico e diagnóstico completo. Entendo seu caso antes de propor qualquer tratamento.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">02</div>
+        <h3>Plano personalizado</h3>
+        <p>Apresento as opções viáveis com prazos, investimento e resultados esperados. Você decide sem pressa.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">03</div>
+        <h3>Tratamento & acompanhamento</h3>
+        <p>Condução técnica, manutenções pontuais e acompanhamento próximo até o sorriso que você quer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="testimonial">
+  <div class="container">
+    <div class="testimonial-inner reveal">
+      <div class="quote-mark">"</div>
+      <blockquote>
+        Fiz todo o meu tratamento com a Dra. Tania e só tenho palavras de elogios: comprometida, pontual, e explicava o planejamento em todas as manutenções.
+      </blockquote>
+      <cite>
+        Rafael Azevedo
+        <span>Paciente · Tratamento finalizado</span>
+      </cite>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow" style="justify-content:center;">Perguntas frequentes</div>
+      <h2>O que você precisa saber antes.</h2>
+    </div>
+    <div class="faq-wrap reveal">
+      <div class="faq-item"><button class="faq-q">Você realiza todos os tratamentos de ortodontia? <span class="icon">+</span></button><div class="faq-a"><p>Sim. Estou atuando na ortodontia há mais de 20 anos e tive a oportunidade de trabalhar com grandes nomes da área. Essa experiência me permite realizar tudo que pertence à especialidade, que é a correção dos dentes e do posicionamento maxilar.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Em quais regiões de São Paulo você atende? <span class="icon">+</span></button><div class="faq-a"><p>Atendo no bairro da Vila Mariana e no bairro do Tatuapé — dois consultórios equipados para receber você.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Qual o horário de atendimento? <span class="icon">+</span></button><div class="faq-a"><p>Segunda a quinta das 9h às 18h, e sexta das 9h às 17h. Não atendo aos finais de semana.</p></div></div>
+      <div class="faq-item"><button class="faq-q">A partir de que idade você atende crianças? <span class="icon">+</span></button><div class="faq-a"><p>A partir dos 5 anos de idade. A ortopedia funcional precoce pode evitar tratamentos mais complexos no futuro.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Você trabalha com Invisalign? <span class="icon">+</span></button><div class="faq-a"><p>Sim — e com muita experiência. Já finalizei mais de 400 casos com Invisalign. Inclusive atuei como planejadora de alinhadores em outras empresas do segmento.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Você atende convênios? <span class="icon">+</span></button><div class="faq-a"><p>Não. Os atendimentos são exclusivamente particulares, permitindo total dedicação ao planejamento e acompanhamento individual de cada caso.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Quanto custa um tratamento com aparelho? <span class="icon">+</span></button><div class="faq-a"><p>O valor varia caso a caso. Cada paciente tem necessidades específicas, por isso só passo o investimento após a avaliação clínica.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATIONS -->
+<section class="locations" id="contato">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow" style="justify-content:center;">Onde me encontrar</div>
+      <h2>Dois consultórios em São Paulo.</h2>
+    </div>
+    <div class="locations-grid">
+      <div class="location reveal">
+        <span class="tag">Zona Sul</span>
+        <h3>Vila Mariana</h3>
+        <address>
+          Rua Doutor Neto de Araújo, 320<br/>
+          Sala 608 · Vila Mariana<br/>
+          São Paulo — SP · 04111-001
+        </address>
+        <div class="location-meta">
+          <div><strong>Horário</strong>Seg–Qui 9h–18h<br/>Sex 9h–17h</div>
+          <div><strong>Contato</strong>(11) 97660-4000</div>
+        </div>
+        <a href="https://api.whatsapp.com/send?phone=5511976604000&text=Quero%20agendar%20na%20Vila%20Mariana" class="btn btn-whatsapp" target="_blank">Agendar nesta unidade</a>
+      </div>
+      <div class="location reveal">
+        <span class="tag">Zona Leste</span>
+        <h3>Tatuapé</h3>
+        <address>
+          Rua Itapura, 300<br/>
+          Sala 509 · Tatuapé<br/>
+          São Paulo — SP · 03310-000
+        </address>
+        <div class="location-meta">
+          <div><strong>Horário</strong>Seg–Qui 9h–18h<br/>Sex 9h–17h</div>
+          <div><strong>Contato</strong>(11) 97660-4000</div>
+        </div>
+        <a href="https://api.whatsapp.com/send?phone=5511976604000&text=Quero%20agendar%20no%20Tatuap%C3%A9" class="btn btn-whatsapp" target="_blank">Agendar nesta unidade</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="final-cta-inner reveal">
+    <div class="eyebrow" style="color:var(--accent);justify-content:center;">Pronto para começar?</div>
+    <h2>Seu sorriso merece <em>planejamento sério</em>.</h2>
+    <p>Envie uma mensagem agora pelo WhatsApp. Respondo pessoalmente e agendamos sua avaliação.</p>
+    <a href="https://api.whatsapp.com/send?phone=5511976604000&text=Ol%C3%A1%20Dra.%20Tania,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." class="btn btn-whatsapp" target="_blank" style="font-size:1rem;padding:18px 40px;">
+      Conversar no WhatsApp →
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Dra. Tania Tamashiro</div>
+        <p style="color:rgba(255,255,255,0.6);font-size:0.88rem;max-width:320px;margin-top:6px;">
+          Ortodontia, Ortopedia Funcional dos Maxilares e Invisalign em São Paulo. Formada pela Unesp — São José dos Campos.
+        </p>
+      </div>
+      <div>
+        <h4>Tratamentos</h4>
+        <ul>
+          <li><a href="#invisalign">Invisalign</a></li>
+          <li><a href="#tratamentos">Aparelhos fixos</a></li>
+          <li><a href="#tratamentos">Aparelhos móveis</a></li>
+          <li><a href="#">Ronco & apneia</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Unidades</h4>
+        <ul>
+          <li><a href="#contato">Vila Mariana</a></li>
+          <li><a href="#contato">Tatuapé</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="https://api.whatsapp.com/send?phone=5511976604000" target="_blank">WhatsApp</a></li>
+          <li>(11) 97660-4000</li>
+          <li>Seg–Sex · 9h–18h</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© Dra. Tania Tamashiro · Todos os direitos reservados</div>
+      <div>Invisalign Doctor · Top Doctor Invisalign</div>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<div class="wa-wrap">
+  <a href="https://api.whatsapp.com/send?phone=5511976604000&text=Ol%C3%A1%20Dra.%20Tania,%20gostaria%20de%20agendar%20minha%20consulta!" target="_blank" class="wa-float" aria-label="WhatsApp">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.3A7.85 7.85 0 0 0 12 4a7.94 7.94 0 0 0-6.77 12L4 20l4.14-1.08A7.93 7.93 0 0 0 12 19.9h.01a7.94 7.94 0 0 0 7.93-7.93 7.88 7.88 0 0 0-2.34-5.67zM12 18.56h-.01a6.59 6.59 0 0 1-3.36-.92l-.24-.14-2.49.65.67-2.42-.16-.25a6.6 6.6 0 0 1 10.23-8.15 6.55 6.55 0 0 1 1.94 4.69 6.6 6.6 0 0 1-6.58 6.54zm3.62-4.93c-.2-.1-1.17-.58-1.36-.64s-.31-.1-.45.1-.51.64-.63.78-.23.15-.43.05a5.4 5.4 0 0 1-1.6-.99 6 6 0 0 1-1.1-1.37c-.12-.2 0-.3.09-.4.1-.1.2-.23.3-.35a1.3 1.3 0 0 0 .2-.33.36.36 0 0 0 0-.35c-.05-.1-.45-1.08-.62-1.48-.16-.4-.33-.34-.45-.34h-.38a.74.74 0 0 0-.53.25 2.23 2.23 0 0 0-.7 1.66 3.87 3.87 0 0 0 .8 2.05 8.85 8.85 0 0 0 3.4 3c.47.2.84.33 1.13.42a2.74 2.74 0 0 0 1.25.08 2.05 2.05 0 0 0 1.34-.94 1.65 1.65 0 0 0 .12-.94c-.05-.1-.18-.15-.38-.25z"/></svg>
+  </a>
+  <div class="wa-balloon" id="waBalloon">
+    <button class="wa-balloon-close" id="waBalloonClose" aria-label="Fechar">✕</button>
+    <div class="wa-balloon-name">Dra. Tania Tamashiro</div>
+    <div class="wa-balloon-dots" id="waDots">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="wa-balloon-msg" id="waMsg">Agende sua consulta agora mesmo comigo! 😊</div>
+  </div>
+</div>
+
+<script>
+  // WhatsApp balloon
+  (function() {
+    const balloon = document.getElementById('waBalloon');
+    const dots    = document.getElementById('waDots');
+    const msg     = document.getElementById('waMsg');
+    const closeBtn = document.getElementById('waBalloonClose');
+
+    setTimeout(function() {
+      balloon.classList.add('visible');
+      // após 1.5s mostra o texto (simula digitação)
+      setTimeout(function() {
+        dots.style.display = 'none';
+        msg.style.display  = 'block';
+      }, 1500);
+    }, 10000);
+
+    closeBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      balloon.classList.remove('visible');
+    });
+  })();
+
+  // FAQ
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.parentElement;
+      document.querySelectorAll('.faq-item.open').forEach(i => { if (i !== item) i.classList.remove('open'); });
+      item.classList.toggle('open');
+    });
+  });
+  // Reveal
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
